@@ -1,1 +1,26 @@
 <h1>Hi,sweet!</h1>
+<script>
+
+$(window).load(function(){ 
+    
+    $('.right-side input[type="submit"]').before('<p class="required">*required</p>')
+
+    if($(".cost-title").parents(".row-depth-2").prev().hasClass("finding-better") == false){
+    	$(".cost-title").parents(".row-depth-2").before($(".finding-better").clone().addClass("hello"));
+    }
+    
+ });
+ 
+
+// $(window).resize(function(){ 
+    
+//     if($(".cost-title").parents(".row-depth-2").prev().hasClass("finding-better") == false){
+//     	$(".cost-title").parents(".row-depth-2").before($(".finding-better").clone().addClass("hello"));
+//     }
+    
+//  });
+ 
+ 
+ 
+ 
+</script>
